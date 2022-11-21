@@ -1,0 +1,67 @@
+
+
+:root{
+    --cor-fundo : #399ADE;
+    --cor-hover : #A9DCFF;
+    --cor-primaria : rgb(231, 241, 236);
+}
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Lato', Helvetica, Arial;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px #999;
+}
+.dp-menu ul{
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a{
+    color: var(--cor-primaria);    
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+    color: #000;
+    border-radius: 20px;
+}
+
+/*sub menu*/
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+
+}
+.dp-menu ul li:hover ul{
+    display: block;  
+}
+.dp-menu ul ul{
+    width: 150px;
+}
+.dp-menu ul ul li a{
+    display:block;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.imagem-fundo{
+    background-image: url(https://img.freepik.com/vetores-gratis/videogame-controla-o-quadro-no-estilo-neon-na-parede-de-tijolo_24908-58914.jpg?w=2000);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.carrosel{
+    width: 260px;
+    height: 160px;
+    outline: 3px solid black ;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0,0.7);
+}
+.carrosel ul{
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 250px;
+
+}
+.carrosel li{
+    position:relative ;
+    animation: slide 2s infinite ease-out;
+}
+@keyframes slide{
+       0%{left: 0px;}
+       20%{left: 0px;}
+       30%{left:-290px}
+       50%{left: -290px;}
+       60%{left: -590px;}
+       90%{left: -590px;}
+       100%{left: 0px;}
+    
+}
